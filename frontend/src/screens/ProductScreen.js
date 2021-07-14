@@ -19,7 +19,7 @@ import { Message } from "../components/Message";
 // import products from "../products";
 
 const ProductScreen = ({ history, match }) => {
-  const [qty, setQty] = useState();
+  const [qty, setQty] = useState(1);
 
   const dispatch = useDispatch();
 
