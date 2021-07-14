@@ -122,18 +122,18 @@ const ProductScreen = ({ history, match }) => {
                 </ListGroup.Item>
               )}
 
-              {/* <ListGroup variant="flush"> */}
-              <ListGroup.Item>
-                <Button
-                  onClick={addToCartHandler}
-                  className="btn-block"
-                  type="button"
-                  disabled={product.countInStock === 0}
-                >
-                  Add to Cart
-                </Button>
-              </ListGroup.Item>
-              {/* </ListGroup> */}
+              <ListGroup variant="flush">
+                <ListGroup.Item>
+                  <Button
+                    onClick={addToCartHandler}
+                    className="btn-block"
+                    type="button"
+                    disabled={product.countInStock === 0}
+                  >
+                    Add to Cart
+                  </Button>
+                </ListGroup.Item>
+              </ListGroup>
             </Card>
           </Col>
         </Row>
